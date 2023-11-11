@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Addressing Academic Problems in Philippines Education System</title>
+    <title>Addressing Academic Problems in Philippine Education System</title>
     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!--
     
   
@@ -238,7 +238,9 @@ https://templatemo.com/tm-557-grad-school
             <div class="top-content">
               <h6>Take our survey<em> for us to learn about your understanding </em> about the topic in Philippines Academic problem </h6>
             </div>
-            <form id="contact" action="" method="get">
+
+            
+            <form action="https://forms.gle/ZTsLzLouEi8hajMG6" method="open">
               <div class="row">
                 <div class="col-md-12">
                   <fieldset>
@@ -257,7 +259,8 @@ https://templatemo.com/tm-557-grad-school
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="button">Get it now</button>
+                    <button type="submit" id="form-submit" class="button">Take one now</button>
+                   
                   </fieldset>
                 </div>
               </div>
@@ -599,7 +602,7 @@ https://templatemo.com/tm-557-grad-school
               <h4>Addressing Philippines Academic Problem</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=dTyalZSyI9I" class="play"><img src="assets/images/main-thumb.png"></a>
+              <a href="https://www.youtube.com/watch?v=dTyalZSyI9I" class="play"><img src="assets/images/main-thumb1.jpg"></a>
             </figure>
           </article>
         </div>
@@ -621,7 +624,7 @@ https://templatemo.com/tm-557-grad-school
                 	
                     Please visit https://templatemo.com/contact page -->
                     
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form action="https://formsubmit.co/d79a38c8dd5a18d36c39f30faab939c6" method="POST">
             
             <div class="row">
               <div class="col-md-6">
@@ -634,11 +637,14 @@ https://templatemo.com/tm-557-grad-school
                     <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
                   </fieldset>
                 </div>
+                
               <div class="col-md-12">
                 <fieldset>
                   <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                 </fieldset>
               </div>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
               <div class="col-md-12">
                 <fieldset>
                   <button type="submit">Send Message Now</button>
@@ -759,11 +765,9 @@ https://templatemo.com/tm-557-grad-school
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-    function sendEmail() {
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "foxtails.mf34@gmail.com",
-            Password : "FE4728921E4A062AB6C1E1BD12AED310D900",
+    function sendEmail(){
+          Email.send({
+            SecureToken : "6121f54c-74be-4f61-85b8-bc1035808317",
             To : 'rurululu443@gmail.com',
             From : document.getElementById("email").value,
             Subject : "This is the subject",
